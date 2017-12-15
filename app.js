@@ -4,7 +4,8 @@ const cmd = require('node-cmd')
 console.log('Loading...')
 
 let getName = (handle) => {
-  return cmd.run(`osascript -e 'tell app "Contacts" to name of people where vcard contains "` + handle + `"'`)
+  let name = cmd.run(`osascript -e 'tell app "Contacts" to name of people where vcard contains "${handle}"'`)[0]
+  return name
 }
 
 console.log('Done!')
@@ -12,8 +13,8 @@ console.log('Done!')
 console.log('Listening for Messages.')
 
 imessage.listen().on('message', (msg) => {
-  if (!msg.fromMe) {
-    console.log(msg.handle + ' said "' + msg.text + '"')
+  if (msg) {
+    console.log(`${getName(msg.handle)}, or ${msg.handle}, said "${msg.text}"`)
   }
 })
 
