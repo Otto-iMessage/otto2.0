@@ -4,7 +4,7 @@ const cmd = require('node-cmd')
 console.log('Loading...')
 
 let getName = (handle) => {
-  let name = cmd.run(`osascript -e 'tell app "Contacts" to name of people where vcard contains "${handle}"'`)[0]
+  let name = cmd.run(`osascript -e 'tell app "Contacts" to name of people where vcard contains "${handle}"'`)
   return name
 }
 
