@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Otto-iMessage/otto2.0#readme",
   "dependencies": {
-    "node-cmd": "^3.0.0",
+    "node-osascript": "^2.0.0",
     "osa-imessage": "^2.3.0"
   }
 }
