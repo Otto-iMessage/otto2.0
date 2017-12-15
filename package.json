@@ -1,0 +1,28 @@
+{
+  "name": "otto2.0",
+  "version": "1.0.0",
+  "description": "Otto iMessage Bot to do all the things",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otto-iMessage/otto2.0.git"
+  },
+  "keywords": [
+    "Otto",
+    "iMessage",
+    "Bot"
+  ],
+  "author": "Ryan Densmore & Peter Stenger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Otto-iMessage/otto2.0/issues"
+  },
+  "homepage": "https://github.com/Otto-iMessage/otto2.0#readme",
+  "dependencies": {
+    "node-cmd": "^3.0.0",
+    "osa-imessage": "^2.3.0"
+  }
+}
