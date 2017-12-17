@@ -1,13 +1,13 @@
-const osascript = require('node-osascript')
+const applescript = require('applescript')
 
 let handlevar = 'rdensmore365@gmail.com'
+let name = []
+console.log(handlevar)
 
 let getName = (handle) => {
-  osascript.execute(`tell app "Contacts" to name of people where vcard contains "${handle}"`, (err, result, raw) => {
-    if (err) {
-      return console.error(err)
-    }
-    return result
+  applescript.execString(`tell app "Contacts" to name of people where vcard contains "${handle}"`, (err, rtn) => {
+    if (err) return console.log(err)
+    return rtn[0]
   })
 }
 
