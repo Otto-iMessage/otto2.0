@@ -20,7 +20,7 @@ do the things, it seems pretty great :ok_hand:
 - [ ] Get basic framework ready
   - [x] Test out sending/receiving module
   - [ ] Convert handles to real names *somehow* (Probably will end up
-  being an external list from somewhere
+  being an external list from somewhere)
   - [ ] Test out importing external files
   - [ ] Allow use of library.js for all functions that Otto can do
   - [ ] Support for multiple DMs and/or group chats

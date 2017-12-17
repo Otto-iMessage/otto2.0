@@ -4,11 +4,10 @@ const osascript = require('node-osascript')
 console.log('Loading...')
 
 let getName = (handle) => {
-  let name = osascript.execute(`osascript -e 'tell app "Contacts" to name of people where vcard contains "${handle}"'`, function(err, result, raw) {
-    if (err) return console.error(err)
-      return result
-  })
-  return name
+	osascript.execute(`tell app "Contacts" to name of people where vcard contains "${handle}"`, (err, result, raw) => {
+  	if (err) return console.error(err)
+  	return result[0]
+	})
 }
 
 console.log('Done!')
