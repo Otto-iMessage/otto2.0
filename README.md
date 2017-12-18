@@ -19,10 +19,13 @@ do the things, it seems pretty great :ok_hand:
 # TO DO
 - [ ] Get basic framework ready
   - [x] Test out sending/receiving module
-  - [ ] Convert handles to real names *somehow* (Probably will end up
-  being an external list from somewhere)
-  - [ ] Test out importing external files
+  - [x] Convert handles to real names *somehow* (Probably will end up
+  being an external list from somewhere, but want a fancy applescript
+  thing)
+  - [x] Test out importing external files
   - [ ] Allow use of library.js for all functions that Otto can do
+  - [ ] Configurations/settings also in library.js (Location of
+    contacts library, etc.)
   - [ ] Support for multiple DMs and/or group chats
 - [ ] Write all functions
 - [ ] Finish up, allow easy adding of custom functions
