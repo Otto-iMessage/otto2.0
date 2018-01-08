@@ -1,10 +1,6 @@
 # otto2.0
 
-written in node reeeeee
-
 A rewrite of @retep's Otto iMessages bot in NodeJS
-
-We're just doing basic framework and testing right now.
 
 # Only runs on MacOS!
 We're using MacOS 10.13 High Sierra
@@ -31,3 +27,21 @@ do the things, it seems pretty great :ok_hand:
 - [ ] Write all functions
 - [ ] Finish up, allow easy adding of custom functions
 
+
+# Peter's Wishlist
+- [ ] Standard Function Format
+- [ ] library.js
+  - [ ] split into multiple subcategories if too big
+- [ ] config.json
+  - [ ] configurate which functions for which group chats
+  - [ ] create trigger to function mappings
+  - [ ] settings
+- [ ] main.js doesn't need to be modified later in time
+
+```json
+"settings":{},
+"chats":{
+"CHATID":
+{"trigger":function}
+}
+```
