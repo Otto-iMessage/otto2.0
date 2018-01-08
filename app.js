@@ -3,17 +3,13 @@ const contacts = require('/Users/Ryan/lib/js/contacts.js')
 
 console.log('Loading...')
 
-let getName = (handle) => {
-  return contacts[handle]
-}
-
 console.log('Done!')
 
 console.log('Listening for Messages.')
 
-imessage.listen().on('message', (msg) => {
+imessage.listen().on('message', async (msg) => {
   if (msg) {
-    console.log(`${getName(msg.handle)}, or ${msg.handle}, said "${msg.text}"`)
+    console.log(`${msg.date}: ${await imessage.nameForHandle(msg.handle)} said "${msg.text}" in group ${msg.group}`)
   }
 })
 
