@@ -39,9 +39,11 @@ do the things, it seems pretty great :ok_hand:
 - [ ] main.js doesn't need to be modified later in time
 
 ```json
-"settings":{},
+"settings":{
+},
 "chats":{
-"CHATID":
-{"trigger":function}
+  "CHATID":{
+    "trigger":"function_name"
+  }
 }
 ```
