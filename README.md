@@ -4,7 +4,9 @@ written in node reeeeee
 
 A rewrite of @retep's Otto iMessages bot in NodeJS
 
-We're just doing basic framework and testing right now.
+We're just doing basic framework and testing right now. I will be
+doing a bunch of work on this soon enough, becuase exams are coming up
+in a few days and I don't feel like studying. 
 
 # Only runs on MacOS!
 We're using MacOS 10.13 High Sierra
@@ -15,6 +17,8 @@ We're using MacOS 10.13 High Sierra
 
 - We use [osa-imessage](https://www.npmjs.com/package/osa-imessage) to
 do the things, it seems pretty great :ok_hand:
+- However, after exploring the chat database, maybe we will have to
+  write our own code to handle attachments and such. Hmmm.
 
 # TO DO
 - [ ] Get basic framework ready
@@ -30,4 +34,5 @@ do the things, it seems pretty great :ok_hand:
   - [ ] Support for multiple DMs and/or group chats
 - [ ] Write all functions
 - [ ] Finish up, allow easy adding of custom functions
+
 
