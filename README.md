@@ -1,7 +1,5 @@
 # otto2.0
 
-written in node reeeeee
-
 A rewrite of @retep's Otto iMessages bot in NodeJS
 
 We're just doing basic framework and testing right now. I will be
