@@ -23,11 +23,11 @@ let send = (handle, message) => {
 
     try {
       //Messages.make({ new: attachment, file: '/Users/Ryan/Pictures/OmNom.jpg' })()
-      Messages.send({ fileName: "/Users/Ryan/Pictures/OmNom.jpeg", to: target })
+      Messages.send(Path('/Users/Ryan/Pictures/rgbinfinity.jpg'), { to: target })
     } catch (e) {
       throw new Error(e)
     }
   })(handle, message)
 }
 
-send('', "/Users/Ryan/Pictures/OmNom.jpeg")
+send('+11234567890', "/Users/Ryan/Pictures/OmNom.jpeg")
