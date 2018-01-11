@@ -22,12 +22,12 @@ let send = (handle, message) => {
     } catch (e) {}
 
     try {
-      Messages.make({ new: attachment, file: '/Users/Ryan/Pictures/OmNom.jpg' })()
-      Messages.send(message, { to: target })
+      //Messages.make({ new: attachment, file: '/Users/Ryan/Pictures/OmNom.jpg' })()
+      Messages.send({ fileName: "/Users/Ryan/Pictures/OmNom.jpeg", to: target })
     } catch (e) {
-      throw new Error(`no thread with handle '${handle}'`)
+      throw new Error(e)
     }
   })(handle, message)
 }
 
-send('+17048801223', "/Users/Ryan/Pictures/OmNom.jpeg")
+send('', "/Users/Ryan/Pictures/OmNom.jpeg")
