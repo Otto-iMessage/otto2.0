@@ -5,7 +5,7 @@
 const assert = require('assert')
 const osa = require('osa2')
 
-let send = (handle, message) => {
+let sendAttachment = (handle, message) => {
   assert(typeof handle == 'string', 'handle must be a string')
   return osa((handle, message) => {
     const Messages = Application('Messages')
@@ -28,4 +28,4 @@ let send = (handle, message) => {
   })(handle, message)
 }
 
-send('handle', "~/Desktop/Screen\ Shot\ 2017-04-12\ at\ 3.04.45\ PM.png")
+sendAttachment('handle', "~/Desktop/Screen\ Shot\ 2017-04-12\ at\ 3.04.45\ PM.png")
