@@ -17,6 +17,12 @@ We're using MacOS 10.13 High Sierra
 do the things, it seems pretty great :ok_hand:
 - However, after exploring the chat database, maybe we will have to
   write our own code to handle attachments and such. Hmmm.
+- Took a ton of digging around on the internet, but I found on some
+  obscure wiki on the 14th page of google results, the `Path()` type in OSA/JSA. Fortunately,
+  it works with `osa2`, also by
+  [@wtfaremyinitials](https://github.com/wtfaremyinitials/osa2), so
+  maybe we'll open a pull request. Anyways, you can now send
+  attachments!
 
 # TO DO
 - [ ] Get basic framework ready
