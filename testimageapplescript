@@ -1,4 +1,4 @@
 tell application "Messages"
 	set targetFileName to POSIX file "/Users/Ryan/Pictures/OmNom.jpeg"
-	send targetFileName to buddy "+17048801223" of service "E:rdensmore365@gmail.com"
+	send targetFileName to buddy "<handle>" of service "E:<imessage account>"
 end tell

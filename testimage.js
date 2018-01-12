@@ -7,7 +7,6 @@ const osa = require('osa2')
 
 let send = (handle, message) => {
   assert(typeof handle == 'string', 'handle must be a string')
-  //assert(typeof message == 'string', 'message must be a string')
   return osa((handle, message) => {
     const Messages = Application('Messages')
 
@@ -22,12 +21,11 @@ let send = (handle, message) => {
     } catch (e) {}
 
     try {
-      //Messages.make({ new: attachment, file: '/Users/Ryan/Pictures/OmNom.jpg' })()
-      Messages.send(Path('/Users/Ryan/Pictures/rgbinfinity.jpg'), { to: target })
+      Messages.send(Path(message), { to: target })
     } catch (e) {
       throw new Error(e)
     }
   })(handle, message)
 }
 
-send('+11234567890', "/Users/Ryan/Pictures/OmNom.jpeg")
+send('handle', "~/Desktop/Screen\ Shot\ 2017-04-12\ at\ 3.04.45\ PM.png")
