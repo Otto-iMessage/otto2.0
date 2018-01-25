@@ -28,4 +28,18 @@ let sendAttachment = (handle, message) => {
   })(handle, message)
 }
 
-sendAttachment('handle', "~/Desktop/Screen\ Shot\ 2017-04-12\ at\ 3.04.45\ PM.png")
+const imessage = require('osa-imessage')
+
+console.log('Loading...')
+
+console.log('Done!')
+
+console.log('Listening for Messages.')
+
+imessage.listen().on('message', async (msg) => {
+  if (msg) {
+    console.log(`${msg.date}: ${await imessage.nameForHandle(msg.handle)} said "${msg.text}" in group ${msg.group}`)
+    sendAttachment('+17048801223', '~/Desktop/IMG_9551.JPG')
+  }
+})
+
