@@ -5,7 +5,7 @@
 const assert = require('assert')
 const osa = require('osa2')
 
-let sendAttachment = (handle, message) => {
+let send = (handle, message) => {
   assert(typeof handle == 'string', 'handle must be a string')
   return osa((handle, message) => {
     const Messages = Application('Messages')
@@ -28,18 +28,5 @@ let sendAttachment = (handle, message) => {
   })(handle, message)
 }
 
-const imessage = require('osa-imessage')
-
-console.log('Loading...')
-
-console.log('Done!')
-
-console.log('Listening for Messages.')
-
-imessage.listen().on('message', async (msg) => {
-  if (msg) {
-    console.log(`${msg.date}: ${await imessage.nameForHandle(msg.handle)} said "${msg.text}" in group ${msg.group}`)
-    sendAttachment('+17048801223', '~/Desktop/IMG_9551.JPG')
-  }
-})
+send('+17047926351', '/Users/Ryan/Desktop/compiling.png')
 

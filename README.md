@@ -22,7 +22,9 @@ do the things, it seems pretty great :ok_hand:
   it works with `osa2`, also by
   [@wtfaremyinitials](https://github.com/wtfaremyinitials/osa2), so
   maybe we'll open a pull request. Anyways, you can now send
-  attachments!
+  attachments! Although, interestingly, you can't use file paths that
+  use your home directory tilde. Ex: `~/Desktop/image.png` doesn't
+  work, but `/Users/Bob/Desktop/image.png` works fine.
 
 # TO DO
 - [ ] Get basic framework ready
