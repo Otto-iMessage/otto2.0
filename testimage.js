@@ -28,5 +28,5 @@ let send = (handle, message) => {
   })(handle, message)
 }
 
-send('+17047926351', '/Users/Ryan/Desktop/compiling.png')
+send('<handle>', '/Users/Ryan/Desktop/compiling.png')
 
