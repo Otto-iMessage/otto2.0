@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/Otto-iMessage/otto2.0#readme",
   "dependencies": {
-    "applescript": "^1.0.0",
     "osa-imessage": "^2.4.0"
   }
 }
